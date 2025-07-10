@@ -30,7 +30,7 @@ export function RoomList() {
         {data?.map((room) => {
           return (
             <Link
-              className="flex items-center justify-between rounded-l-lg border p-3 hover:bg-accent/50"
+              className="flex items-center justify-between rounded-lg border p-3 hover:bg-accent/50"
               key={room.id}
               to={`/room/${room.id}`}
             >
@@ -42,7 +42,7 @@ export function RoomList() {
                     {dayjs(room.createdAt).toNow()}
                   </Badge>
                   <Badge className="text-xs" variant="secondary">
-                    {room.questionsCount} pergunta(s)
+                    {room.questionCount} pergunta(s)
                   </Badge>
                 </div>
               </div>
